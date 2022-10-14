@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <script defer src="codigo.js">codigo.js</script>
+  <title>Codificador e Decodificador</title>
+</head>
+
+<body>
+  <section id='corpo'>
+    <h1>codificador e decodificador</h1>
+      
+      <label for='linguagem'>Escolha a linguagem</label>
+      <select id='linguagem'>
+        <option value="1">Cifra de César </option>
+        <option value="2">Base 64</option>
+      </select>
+      
+      <div id='deslocamentoDiv'>
+        <input name='deslocamento' id='deslocamento' type='text' value='3'>
+      </div>
+      
+      <div id='operacaoDiv'>
+        <input type='radio' id='cod' value='cod' name='operacao' checked>
+        <label for='cod'>Codificar</label>
+        <input type='radio' id='decod' value='decod' name='operacao'>
+        <label for='decod'>Decodificar</label>
+      </div>
+      
+      <div id='mensagemDiv'>
+        <label for='mensagem'>Digite sua mensagem</label><br>
+        <textarea name='mensagem' id='mensagem'></textarea>
+      </div>
+      
+      <button name='botao' id='botao' align="center">Codificar</button>
+      
+  </section>
+  
+  <div id='escuro'>
+    <div id='popup'>
+      <p id='resultado'>&nbsp;</p>
+      <button name='copiar' id='copiar'>copiar</button>
+      <button name='fechar' id='fechar'>fechar</button>
+    </div>
+  </div>
+  
+   <div id='escuro2'>
+    <div id='popup2'>
+      <p id='sobre'>&nbsp;</p>
+      <button name='fechar' id='fechar'>fechar</button>
+    </div>
+  </div>
+</body>
+
+</html>
